@@ -37,3 +37,10 @@ export const pageTransition: Variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: easing } },
   exit: { opacity: 0, y: -8, transition: { duration: 0.2, ease: easing } },
 };
+
+export const staggerContainer: Variants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
+  },
+};
