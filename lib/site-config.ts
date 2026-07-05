@@ -4,6 +4,8 @@ export const siteConfig = {
   name: "AETHER",
   description:
     "AETHER, her sistemin anlamlı oyuncu etkileşimi yaratmak için var olduğu, premium bir sosyal roleplay ekosistemidir.",
+  // TODO: replace with the real production domain once one exists.
+  url: "https://aether.gg",
   discordUrl: "https://discord.gg/aether",
   // TODO: replace with the client download / launcher link once it exists,
   // then swap this button for Login per the roadmap.

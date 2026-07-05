@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-import { buttonVariants } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link-button";
+import { useFocusTrap } from "@/hooks/use-focus-trap";
 import { useScrolled } from "@/hooks/use-scrolled";
 import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
@@ -16,6 +17,7 @@ export function Navbar() {
   const scrolled = useScrolled();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [prevPathname, setPrevPathname] = useState(pathname);
+  const mobileNavRef = useRef<HTMLElement>(null);
 
   if (pathname !== prevPathname) {
     setPrevPathname(pathname);
@@ -30,6 +32,8 @@ export function Navbar() {
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [mobileOpen]);
+
+  useFocusTrap(mobileNavRef, mobileOpen);
 
   return (
     <header
@@ -80,20 +84,12 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
-          <a
-            href={siteConfig.discordUrl}
-            target="_blank"
-            rel="noreferrer"
-            className={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
-          >
+          <LinkButton href={siteConfig.discordUrl} external variant="ghost" size="sm">
             Discord
-          </a>
-          <Link
-            href={siteConfig.playUrl}
-            className={cn(buttonVariants({ variant: "default", size: "sm" }))}
-          >
+          </LinkButton>
+          <LinkButton href={siteConfig.playUrl} size="sm">
             Oyna
-          </Link>
+          </LinkButton>
         </div>
 
         <button
@@ -116,6 +112,7 @@ export function Navbar() {
         {mobileOpen && (
           <motion.nav
             id="mobile-nav"
+            ref={mobileNavRef}
             aria-label="Mobil gezinme"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
@@ -143,26 +140,18 @@ export function Navbar() {
                 );
               })}
               <div className="mt-3 flex flex-col gap-2 border-t border-border pt-3">
-                <a
+                <LinkButton
                   href={siteConfig.discordUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={cn(
-                    buttonVariants({ variant: "ghost", size: "sm" }),
-                    "w-full"
-                  )}
+                  external
+                  variant="ghost"
+                  size="sm"
+                  className="w-full"
                 >
                   Discord
-                </a>
-                <Link
-                  href={siteConfig.playUrl}
-                  className={cn(
-                    buttonVariants({ variant: "default", size: "sm" }),
-                    "w-full"
-                  )}
-                >
+                </LinkButton>
+                <LinkButton href={siteConfig.playUrl} size="sm" className="w-full">
                   Oyna
-                </Link>
+                </LinkButton>
               </div>
             </div>
           </motion.nav>

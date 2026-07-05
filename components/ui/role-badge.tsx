@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 
 import { Badge } from "@/components/ui/badge";
-import { roleColors, type Role } from "@/lib/theme";
+import { roleColors, softTint, type Role } from "@/lib/theme";
 import { cn } from "@/lib/utils";
 
 type RoleBadgeProps = {
@@ -19,8 +19,8 @@ export function RoleBadge({ role, className }: RoleBadgeProps) {
       style={
         {
           color,
-          borderColor: `${color}4d`,
-          backgroundColor: `${color}1a`,
+          borderColor: softTint(color, 30),
+          backgroundColor: softTint(color, 10),
         } as CSSProperties
       }
     >

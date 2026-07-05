@@ -1,15 +1,15 @@
 import { Info, Lightbulb, TriangleAlert, type LucideIcon } from "lucide-react";
 import type { CSSProperties, ReactNode } from "react";
 
-import { statusColors } from "@/lib/theme";
+import { calloutColors, softTint } from "@/lib/theme";
 import { cn } from "@/lib/utils";
 
 export type CalloutType = "info" | "warning" | "tip";
 
 const calloutConfig: Record<CalloutType, { icon: LucideIcon; color: string }> = {
-  info: { icon: Info, color: "var(--accent)" },
-  warning: { icon: TriangleAlert, color: statusColors.pending },
-  tip: { icon: Lightbulb, color: statusColors.online },
+  info: { icon: Info, color: calloutColors.info },
+  warning: { icon: TriangleAlert, color: calloutColors.warning },
+  tip: { icon: Lightbulb, color: calloutColors.tip },
 };
 
 type CalloutProps = {
@@ -30,8 +30,8 @@ export function Callout({ type, title, children, className }: CalloutProps) {
       )}
       style={
         {
-          borderColor: `color-mix(in oklch, ${color} 30%, transparent)`,
-          backgroundColor: `color-mix(in oklch, ${color} 8%, transparent)`,
+          borderColor: softTint(color, 30),
+          backgroundColor: softTint(color, 8),
         } as CSSProperties
       }
     >

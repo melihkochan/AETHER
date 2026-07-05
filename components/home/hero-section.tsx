@@ -1,16 +1,14 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { Heading } from "@/components/typography/heading";
 import { Paragraph } from "@/components/typography/paragraph";
-import { buttonVariants } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link-button";
 import { fadeUp } from "@/lib/animations/variants";
 import { siteConfig } from "@/lib/site-config";
-import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   return (
@@ -32,18 +30,12 @@ export function HeroSection() {
             roleplay ekosistemidir.
           </Paragraph>
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <Link
-              href={siteConfig.playUrl}
-              className={cn(buttonVariants({ variant: "default", size: "lg" }), "px-6")}
-            >
+            <LinkButton href={siteConfig.playUrl} size="lg" className="px-6">
               Oyna
-            </Link>
-            <Link
-              href="/documentation"
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }), "px-6")}
-            >
+            </LinkButton>
+            <LinkButton href="/documentation" variant="outline" size="lg" className="px-6">
               Dokümantasyon
-            </Link>
+            </LinkButton>
           </div>
         </motion.div>
       </Container>
