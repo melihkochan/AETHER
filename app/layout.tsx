@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/shared/theme-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/components/feedback/toast";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -39,9 +41,12 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          <Navbar />
-          <main className="flex flex-1 flex-col pt-16">{children}</main>
-          <Footer />
+          <TooltipProvider>
+            <Navbar />
+            <main className="flex flex-1 flex-col pt-16">{children}</main>
+            <Footer />
+            <Toaster />
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>
