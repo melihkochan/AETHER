@@ -8,7 +8,7 @@ type BreadcrumbProps = {
 
 export function Breadcrumb({ category, title }: BreadcrumbProps) {
   return (
-    <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-sm text-muted-foreground">
+    <nav aria-label="İçerik yolu" className="flex items-center gap-1.5 text-sm text-muted-foreground">
       <Link href="/documentation" className="hover:text-foreground">
         Dokümantasyon
       </Link>

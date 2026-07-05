@@ -17,7 +17,7 @@ type LoadingSpinnerProps = {
 export function LoadingSpinner({
   size = "md",
   className,
-  label = "Loading",
+  label = "Yükleniyor",
 }: LoadingSpinnerProps) {
   return (
     <span role="status" className={cn("inline-flex items-center justify-center", className)}>

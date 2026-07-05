@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PlaceholderPage } from "@/components/shared/placeholder-page";
 
 export const metadata: Metadata = {
-  title: "Community — AETHER",
+  title: "Topluluk — AETHER",
 };
 
 export default function CommunityPage() {
-  return <PlaceholderPage title="Community" />;
+  return <PlaceholderPage title="Topluluk" />;
 }

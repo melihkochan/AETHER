@@ -19,12 +19,13 @@ export function ManifestoSection() {
           variants={fadeUp}
           className="flex max-w-2xl flex-col gap-4"
         >
-          <Subheading as="h2">Every system creates a story.</Subheading>
+          <Subheading as="h2">Her sistem bir hikâye yaratır.</Subheading>
           <Paragraph>
-            AETHER is not built around tasks or grinding. Every system — the
-            economy, the world, the community — exists to give players a
-            reason to interact with one another. We design for the moments
-            that happen between people, not the checklist between them.
+            AETHER, görevler veya tekrarlayan işler etrafında kurulmadı. Her
+            sistem — ekonomi, dünya, topluluk — oyunculara birbirleriyle
+            etkileşim kurmaları için bir sebep sunmak amacıyla var oluyor.
+            İnsanlar arasında geçen anları tasarlıyoruz, aralarındaki
+            görev listesini değil.
           </Paragraph>
         </motion.div>
       </Container>

@@ -10,10 +10,10 @@ import { Caption } from "@/components/typography/caption";
 import { fadeUp } from "@/lib/animations/variants";
 
 const comparisons = [
-  { traditional: "Endless grinding", aether: "Meaningful progression" },
-  { traditional: "Robbery simulator", aether: "Living social world" },
-  { traditional: "NPC economy", aether: "Player driven economy" },
-  { traditional: "Copy-paste scripts", aether: "Unified ecosystem" },
+  { traditional: "Bitmeyen tekrar döngüsü", aether: "Anlamlı ilerleme" },
+  { traditional: "Soygun simülatörü", aether: "Canlı bir sosyal dünya" },
+  { traditional: "NPC ekonomisi", aether: "Oyuncu odaklı ekonomi" },
+  { traditional: "Kopyala-yapıştır scriptler", aether: "Bütünleşik ekosistem" },
 ];
 
 export function ComparisonSection() {
@@ -21,7 +21,7 @@ export function ComparisonSection() {
     <Section spacing="lg" className="border-t border-border">
       <Container>
         <div className="flex flex-col gap-10">
-          <Subheading as="h2">What makes AETHER different</Subheading>
+          <Subheading as="h2">AETHER&apos;ı farklı kılan nedir</Subheading>
 
           <motion.div
             initial="hidden"
@@ -32,7 +32,7 @@ export function ComparisonSection() {
           >
             <div className="grid grid-cols-2">
               <div className="p-4 md:p-5">
-                <Caption>Traditional Roleplay</Caption>
+                <Caption>Geleneksel Roleplay</Caption>
               </div>
               <div className="border-l border-border p-4 md:p-5">
                 <Caption>AETHER</Caption>

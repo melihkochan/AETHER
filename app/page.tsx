@@ -10,10 +10,10 @@ import { FinalCtaSection } from "@/components/home/final-cta-section";
 
 export const metadata: Metadata = {
   title: "AETHER",
-  description: "A premium social roleplay ecosystem.",
+  description: "Premium bir sosyal roleplay ekosistemi.",
   openGraph: {
     title: "AETHER",
-    description: "A premium social roleplay ecosystem.",
+    description: "Premium bir sosyal roleplay ekosistemi.",
     type: "website",
     // TODO: add a real Open Graph image once brand assets exist.
     images: [],

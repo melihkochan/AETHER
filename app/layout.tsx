@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "AETHER",
   description:
-    "AETHER is a premium social roleplay ecosystem where every system exists to create meaningful player interaction.",
+    "AETHER, her sistemin anlamlı oyuncu etkileşimi yaratmak için var olduğu, premium bir sosyal roleplay ekosistemidir.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="tr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >

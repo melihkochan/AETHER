@@ -3,18 +3,18 @@ import type { NavItem } from "@/types/nav";
 export const siteConfig = {
   name: "AETHER",
   description:
-    "AETHER is a premium social roleplay ecosystem where every system exists to create meaningful player interaction.",
+    "AETHER, her sistemin anlamlı oyuncu etkileşimi yaratmak için var olduğu, premium bir sosyal roleplay ekosistemidir.",
   discordUrl: "https://discord.gg/aether",
   // TODO: replace with the client download / launcher link once it exists,
   // then swap this button for Login per the roadmap.
   playUrl: "#",
-  version: "v0.1.0 — Pre-Alpha",
+  version: "v0.1.0 — Ön Alfa",
   navItems: [
-    { label: "Home", href: "/" },
-    { label: "World", href: "/world" },
-    { label: "Documentation", href: "/documentation" },
-    { label: "Rules", href: "/rules" },
-    { label: "Development", href: "/development" },
-    { label: "Community", href: "/community" },
+    { label: "Ana Sayfa", href: "/" },
+    { label: "Dünya", href: "/world" },
+    { label: "Dokümantasyon", href: "/documentation" },
+    { label: "Kurallar", href: "/rules" },
+    { label: "Geliştirme", href: "/development" },
+    { label: "Topluluk", href: "/community" },
   ] satisfies NavItem[],
 };

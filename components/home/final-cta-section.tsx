@@ -23,13 +23,13 @@ export function FinalCtaSection() {
           className="flex flex-col items-center gap-8 text-center"
         >
           <Heading as="h2" className="md:text-5xl">
-            Technology follows experience.
+            Teknoloji, deneyimi takip eder.
           </Heading>
           <Link
             href={siteConfig.playUrl}
             className={cn(buttonVariants({ variant: "default", size: "lg" }), "px-8")}
           >
-            Play AETHER
+            AETHER&apos;ı Oyna
           </Link>
         </motion.div>
       </Container>

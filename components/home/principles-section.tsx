@@ -12,28 +12,28 @@ import { fadeUp, staggerContainer } from "@/lib/animations/variants";
 const principles = [
   {
     icon: Users,
-    title: "Social First",
-    description: "Every system is designed to bring players together, not isolate them.",
+    title: "Önce Sosyallik",
+    description: "Her sistem, oyuncuları birbirinden izole etmek yerine bir araya getirmek için tasarlanır.",
   },
   {
     icon: Landmark,
-    title: "Player Economy",
-    description: "The economy is driven by players, not scripted NPC loops.",
+    title: "Oyuncu Ekonomisi",
+    description: "Ekonomiyi kurgulanmış NPC döngüleri değil, oyuncular yönlendirir.",
   },
   {
     icon: Sparkles,
-    title: "Premium Experience",
-    description: "Every interaction is crafted with care, not shipped as a placeholder.",
+    title: "Premium Deneyim",
+    description: "Her etkileşim özenle tasarlanır, taslak olarak bırakılmaz.",
   },
   {
     icon: TrendingUp,
-    title: "Meaningful Progression",
-    description: "Progress reflects the stories you've lived, not hours ground away.",
+    title: "Anlamlı İlerleme",
+    description: "İlerleme, harcanan saatleri değil yaşanan hikâyeleri yansıtır.",
   },
   {
     icon: InfinityIcon,
-    title: "Long-term Thinking",
-    description: "AETHER is built to be maintained and grown for years, not launched and left.",
+    title: "Uzun Vadeli Düşünce",
+    description: "AETHER, yıllarca sürdürülüp büyütülmek üzere kuruldu; çıkarılıp bırakılmak üzere değil.",
   },
 ];
 
@@ -42,7 +42,7 @@ export function PrinciplesSection() {
     <Section spacing="lg" className="border-t border-border">
       <Container>
         <div className="flex flex-col gap-10">
-          <Subheading as="h2">Core principles</Subheading>
+          <Subheading as="h2">Temel ilkeler</Subheading>
           <motion.div
             initial="hidden"
             whileInView="visible"

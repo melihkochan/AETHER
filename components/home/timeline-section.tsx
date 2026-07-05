@@ -9,14 +9,14 @@ import { Caption } from "@/components/typography/caption";
 import { fadeUp, staggerContainer } from "@/lib/animations/variants";
 
 const milestones = [
-  "Foundation",
-  "Design System",
-  "Core Framework",
-  "Economy",
-  "Phone",
-  "Inventory",
-  "Businesses",
-  "Launch",
+  "Temel Altyapı",
+  "Tasarım Sistemi",
+  "Çekirdek Framework",
+  "Ekonomi",
+  "Telefon",
+  "Envanter",
+  "İşletmeler",
+  "Çıkış",
 ];
 
 export function TimelineSection() {
@@ -24,7 +24,7 @@ export function TimelineSection() {
     <Section spacing="lg" className="border-t border-border">
       <Container>
         <div className="flex flex-col gap-10">
-          <Subheading as="h2">Development</Subheading>
+          <Subheading as="h2">Geliştirme</Subheading>
 
           <motion.ol
             initial="hidden"

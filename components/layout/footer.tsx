@@ -18,7 +18,7 @@ export function Footer() {
         </div>
 
         <nav
-          aria-label="Footer"
+          aria-label="Alt bilgi"
           className="flex flex-wrap gap-x-6 gap-y-2"
         >
           {siteConfig.navItems.map((item) => (
@@ -43,7 +43,7 @@ export function Footer() {
 
       <div className="border-t border-border px-6 py-6">
         <p className="mx-auto max-w-6xl text-xs text-muted-foreground">
-          © {year} {siteConfig.name}. All rights reserved.
+          © {year} {siteConfig.name}. Tüm hakları saklıdır.
         </p>
       </div>
     </footer>

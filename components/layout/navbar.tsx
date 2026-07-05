@@ -49,7 +49,7 @@ export function Navbar() {
         </Link>
 
         <nav
-          aria-label="Primary"
+          aria-label="Ana gezinme"
           className="hidden items-center gap-8 md:flex"
         >
           {siteConfig.navItems.map((item) => {
@@ -92,7 +92,7 @@ export function Navbar() {
             href={siteConfig.playUrl}
             className={cn(buttonVariants({ variant: "default", size: "sm" }))}
           >
-            Play
+            Oyna
           </Link>
         </div>
 
@@ -101,7 +101,7 @@ export function Navbar() {
           className="inline-flex items-center justify-center rounded-md p-2 text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 md:hidden"
           aria-expanded={mobileOpen}
           aria-controls="mobile-nav"
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-label={mobileOpen ? "Menüyü kapat" : "Menüyü aç"}
           onClick={() => setMobileOpen((value) => !value)}
         >
           {mobileOpen ? (
@@ -116,7 +116,7 @@ export function Navbar() {
         {mobileOpen && (
           <motion.nav
             id="mobile-nav"
-            aria-label="Mobile"
+            aria-label="Mobil gezinme"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -161,7 +161,7 @@ export function Navbar() {
                     "w-full"
                   )}
                 >
-                  Play
+                  Oyna
                 </Link>
               </div>
             </div>

@@ -23,26 +23,26 @@ export function HeroSection() {
           className="flex max-w-3xl flex-col gap-6"
         >
           <Heading as="h1" className="md:text-6xl">
-            A modern social world,
+            Anlamlı roleplay için kurulmuş,
             <br />
-            built for meaningful roleplay.
+            modern bir sosyal dünya.
           </Heading>
           <Paragraph className="max-w-xl text-lg text-muted-foreground">
-            AETHER is a premium social roleplay ecosystem where every
-            interaction creates a story.
+            AETHER, her etkileşimin bir hikâye yarattığı premium bir sosyal
+            roleplay ekosistemidir.
           </Paragraph>
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <Link
               href={siteConfig.playUrl}
               className={cn(buttonVariants({ variant: "default", size: "lg" }), "px-6")}
             >
-              Play
+              Oyna
             </Link>
             <Link
               href="/documentation"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "px-6")}
             >
-              Documentation
+              Dokümantasyon
             </Link>
           </div>
         </motion.div>

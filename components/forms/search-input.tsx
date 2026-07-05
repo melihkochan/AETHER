@@ -34,7 +34,7 @@ export function SearchInput({
         <button
           type="button"
           onClick={onClear}
-          aria-label="Clear search"
+          aria-label="Aramayı temizle"
           className="absolute top-1/2 right-2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
         >
           <X className="size-3.5" aria-hidden="true" />

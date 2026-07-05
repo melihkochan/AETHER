@@ -23,11 +23,11 @@ export function CommunitySection() {
           variants={fadeUp}
           className="flex max-w-2xl flex-col gap-4"
         >
-          <Subheading as="h2">Grown with our community</Subheading>
+          <Subheading as="h2">Topluluğumuzla birlikte büyüyor</Subheading>
           <Paragraph>
-            AETHER isn&apos;t built behind closed doors. Every system is
-            shaped alongside the people who will use it, with progress shared
-            openly as it happens.
+            AETHER kapalı kapılar ardında inşa edilmiyor. Her sistem, onu
+            kullanacak kişilerle birlikte şekilleniyor ve ilerleme
+            gerçekleştikçe açıkça paylaşılıyor.
           </Paragraph>
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <a
@@ -42,7 +42,7 @@ export function CommunitySection() {
               href="/development"
               className={cn(buttonVariants({ variant: "outline" }))}
             >
-              Development Blog
+              Geliştirme Günlüğü
             </Link>
           </div>
         </motion.div>
